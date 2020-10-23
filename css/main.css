@@ -1,0 +1,232 @@
+/* Colors */
+/* Font */
+/* Colors */
+/* Font */
+* {
+  font-family: 'Roboto', sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  font-weight: 400;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.muted {
+  color: #605e5e;
+  text-decoration: underline;
+  text-align: center;
+  cursor: pointer;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 400;
+}
+
+h1 {
+  margin: 0;
+  padding: 10px 10px;
+  color: white;
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1rem;
+  text-align: center;
+}
+
+span, p {
+  font-weight: 300;
+}
+
+.container {
+  max-width: 600px;
+  width: 100%;
+  margin: auto;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper {
+  width: auto;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(290px, 300px))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(290px, 300px));
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #f5efef;
+}
+
+.item1 {
+  height: auto;
+  width: 100px;
+}
+
+.item2 {
+  background-color: #262a4f;
+}
+
+.course {
+  height: 100px;
+  background-color: #f5efef;
+  display: -ms-grid;
+  display: grid;
+  padding: 0 10px;
+  -ms-grid-columns: .5fr 1fr;
+      grid-template-columns: .5fr 1fr;
+}
+
+.course img {
+  height: 50px;
+  width: 100px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.course .cta {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.course .cta button {
+  width: 100%;
+}
+
+.course h4 {
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.course .profile {
+  display: none;
+}
+
+.section {
+  padding: 0 10px;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  background-color: #ed5151;
+  font-size: 1em;
+  padding: 5px 20px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+hr {
+  margin: 0;
+}
+
+.footnote {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: .5em;
+  background-color: #f5efef;
+}
+
+footer {
+  height: 100px;
+  background-color: #262a4f;
+  color: white;
+  padding: 20px 10px;
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .item1 {
+    width: 200px;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / span 2;
+  }
+  .item2 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / span 2;
+  }
+  .item3 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / span 2;
+  }
+  .section {
+    padding: 0 10px;
+  }
+  .course {
+    height: 200px;
+    background-color: #f5efef;
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 1em;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .course img {
+    height: 150px;
+    width: 290px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .course .cta {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .course .cta button {
+    width: 100%;
+    padding: 8px 15px;
+  }
+  .course h4 {
+    margin: 0;
+    padding-bottom: 10px;
+    font-size: 1.2rem;
+  }
+  .course .profile {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .course .profile span {
+    position: relative;
+    left: 5px;
+    bottom: 15px;
+  }
+  .course .profile img {
+    height: 42px;
+    width: 42px;
+  }
+}
